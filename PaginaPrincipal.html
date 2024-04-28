@@ -5,16 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nombre de tu Landing Page</title>
     <link rel="stylesheet" href="css.css">
+    <style>
+        @media only screen and (max-width: 768px) {
+            .menu {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .menu a {
+                margin: 10px 0;
+            }
+            .hero h1 {
+                font-size: 24px;
+            }
+            .hero p {
+                font-size: 14px;
+            }
+            .features .feature-card {
+                width: 100%;
+            }
+            .contact-form input,
+            .contact-form textarea,
+            .contact-form button {
+                width: 100%;
+            }
+        }
+    </style>
 </head>
 <body>
     <header>
-        <nav>
-            <div class="logo">
-                <a href="#">Logo</a>
-            </div>
+        <nav>   
             <div class="menu">
                 <a href="#home">Home</a>
-                <a href="Quienes_Somos.html ">Quienes somos</a>
+                <a href="Quienes_Somos.html">Quienes somos</a>
                 <a href="#animales">animalitos</a>
                 <a href="#contacto">Contacto</a>
             </div>
@@ -24,17 +47,16 @@
     <main>
         <section class="hero" id="Home">
             <h1>Conoce A los animales y cómo adoptarlos</h1>
-            <p>Ayúdanos a mejorar la situación de estos animalitos que buscan un hogar</p>
+            <p>Aqui tienes un Video de Youtube para consientizar sobre la adopcion de Mascotas</p>
         </section>
 
         <div class="video-section">
             <div class="video-container">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/KClnQgyPacU?si=qpHO2On4PpdiD9x1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            </div>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/Jv1iolzbvZg?si=8244HzFuppZoK6RX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>            </div>
         </div>
 
         <section class="features" id="animales">
-            <h2>Características Principales</h2>
+            <h2>Animales sin Hogar</h2>
             <table>
                 <tr>
                     <th>Imagen</th>
@@ -59,7 +81,6 @@
             </table>
         </section>
 
-
         <section class="animals-for-adoption" id="nuevos-animales">
             <h2>Nuevos Animales Disponibles para Adopción</h2>
             <ul class="animal-list">
@@ -81,7 +102,6 @@
                 </li>
             </ul>
         </section>
-        
 
         <section class="contact-form" id="contacto">
             <h2>Contáctanos</h2>
@@ -101,7 +121,12 @@
     </main>
 
     <footer>
-        <p>&copy; Hitergo</p>
+        <div class="redes">
+            <a href="https://www.inacap.cl" target="_blank">
+                <img src="imagenes/inacap.png" width="60">
+            </a>
+        </div>
+        <p>&copy; Alexis Venegas 2024, Todos lo derechos reservados</p>
     </footer>
 
 </body>

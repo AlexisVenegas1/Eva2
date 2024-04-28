@@ -13,50 +13,90 @@
                 <a href="#">Logo</a>
             </div>
             <div class="menu">
-                <a href="#">Inicio</a>
-                <a href="#">Acerca de</a>
-                <a href="#">Servicios</a>
-                <a href="#">Contacto</a>
+                <a href="#home">Home</a>
+                <a href="Quienes_Somos.html ">Quienes somos</a>
+                <a href="#animales">animalitos</a>
+                <a href="#contacto">Contacto</a>
             </div>
         </nav>
     </header>
 
     <main>
-    
+        <section class="hero" id="Home">
+            <h1>Conoce A los animales y cómo adoptarlos</h1>
+            <p>Ayúdanos a mejorar la situación de estos animalitos que buscan un hogar</p>
         </section>
-    
+
         <div class="video-section">
             <div class="video-container">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/KClnQgyPacU?si=qpHO2On4PpdiD9x1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/KClnQgyPacU?si=qpHO2On4PpdiD9x1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+        </div>
 
-        </div>
-        <div class="additional-content">
-            <h1>Connoce A los animales y como adoptarlos</h1>
-            <p>Ayudanos a mejorar la situcacion de estos animalitos que buscan un hogar</p>
-        </div>
-    </div>
-    
-        <section class="features">
-            <!-- Contenido de la sección de características -->
+        <section class="features" id="animales">
+            <h2>Características Principales</h2>
+            <table>
+                <tr>
+                    <th>Imagen</th>
+                    <th>Nombre</th>
+                    <th>Descripción</th>
+                </tr>
+                <tr>
+                    <td><img src="imagenes/perro.jpg" alt="Característica 1"></td>
+                    <td>Boby el saltarín</td>
+                    <td>Boby es un perrito de 2 años que fue rescatado de las calles para luego saltar de felicidad</td>
+                </tr>
+                <tr>
+                    <td><img src="imagenes/gato.jpg" alt="Característica 2"></td>
+                    <td>Kitty la demonio</td>
+                    <td>Gata que se cree que está maldita por un demonio asociado como Hello kitty</td>
+                </tr>
+                <tr>
+                    <td><img src="imagenes/loro.jpg" alt="Característica 3"></td>
+                    <td>Loro Rene</td>
+                    <td>Un loro que fue encontrado en un árbol en el cual no paraba de repetir la frase "PLOP" de la famosa historieta Condorito</td>
+                </tr>
+            </table>
         </section>
 
-        <section class="features">
-            <h2>Características Principales</h2>
-            <div class="feature-card">
-                <img src="imagenes/perro.jpg" alt="Característica 1">
-                <h3>Boby el saltarin</h3>
-                <p>Boby es un perrito de 2 años que fue rescatado de las calles para luego saltar de felicidad</p>
-            </div>
-            <div class="feature-card">
-                <img src="imagenes/gato.jpg" alt="Característica 2">
-                <h3>Característica 2</h3>
-                <p>Descripción de la característica 2</p>
-            </div>
-            <div class="feature-card">
-                <img src="imagenes/loro.jpg" alt="Característica 3">
-                <h3>Loro Rene</h3>
-                <p>Un loro que fue encontrado en un arbol en el cual no paraba de repitir la frase "PLOP" de la famosa historieta Condorito</p>
-            </div>
+
+        <section class="animals-for-adoption" id="nuevos-animales">
+            <h2>Nuevos Animales Disponibles para Adopción</h2>
+            <ul class="animal-list">
+                <li>
+                    <img src="imagenes/conejo.jpg" alt="Conejo">
+                    <h3>Coco</h3>
+                    <p>Coco es un conejito juguetón </p>
+                    <p><strong>Edad:</strong> 1 año</p>
+                    <p><strong>Raza:</strong> Conejo Enano</p>
+                    <p><strong>Sexo:</strong> Macho</p>
+                </li>
+                <li>
+                    <img src="imagenes/elefante.jpg" alt="elefante">
+                    <h3>Elefanate Guerrero mitico ancestral</h3>
+                    <p>Es un Elefanate Guerrero mitico ancestral.</p>
+                    <p><strong>Edad:</strong> ???</p>
+                    <p><strong>Especie:</strong> Elefante(?)</p>
+                    <p><strong>Sexo:</strong> Macho</p>
+                </li>
+            </ul>
+        </section>
+        
+
+        <section class="contact-form" id="contacto">
+            <h2>Contáctanos</h2>
+            <form action="paginaContacto.html">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" required></textarea>
+
+                <button type="submit" onclick="alert('Gracias por contactarnos')">Enviar</button>
+            </form>
         </section>
     </main>
 
@@ -64,6 +104,5 @@
         <p>&copy; Hitergo</p>
     </footer>
 
-    <script src="script.js"></script>
 </body>
 </html>
